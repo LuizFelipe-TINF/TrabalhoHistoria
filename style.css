@@ -1,0 +1,270 @@
+
+.intr{
+    background-color: #D9D9D9;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.historia{
+    background-color: #D9D9D9;
+    text-align: center;
+    
+}
+
+#linhadotempo{
+    background-color: #8C8C8C;
+}
+
+.personagens{
+    background-color: #D9D9D9;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.curiosidades {
+    background-image: url(img/independencia-dos-eua.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    text-align: center;
+    padding: 20px 10px;
+    padd
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.curiosidades h2 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.curiosidades ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 700px;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.curiosidades li {
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease; 
+}
+
+/* HOVER */
+.curiosidades li:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: scale(1.03); 
+    cursor: pointer;
+}
+
+
+.rodape {
+  background-color: #8C8C8C;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  border-top: 4px solid #D9D9D9; 
+  margin-top: 40px;
+}
+
+.rodape p {
+  margin: 5px 0;
+}
+
+
+
+
+.textoimagem{
+    background-color: #8C8C8C;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.imgguerra {
+    height: auto;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+   ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+   
+    
+}
+
+   li {
+    display: inline-block;
+    margin: 0 10px;
+    padding-bottom: 10px;
+}
+
+img{
+    width: 100%;
+    height: relative;
+    
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    }
+    
+     body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 20px;
+            
+        }
+
+.banner-img {
+    width: 100%;
+    height: auto; 
+    max-height:200px; 
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto; 
+}
+
+.tit {
+    position: relative;
+    text-align: center;
+    color: white;
+   
+}
+
+.titulo-texto {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.3); 
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+        
+
+
+.hOut { overflow-x: auto; }
+.hIn {
+  display: flex;
+  padding-bottom: 10px; margin-bottom: 20px;
+  border-bottom: 3px dotted #ffa5a5;
+  min-width: fit-content; width: 100%;
+}
+
+.hIn .event {
+  color: #fff; background: #921f1f;
+  min-width: 200px; max-width: 300px;
+  padding: 10px; margin: 10px; border-radius: 10px;
+  position: relative;
+
+
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* NOVO - HOVER */
+.hIn .event:hover {
+  transform: scale(1.05); 
+  background: #b53030;   
+  cursor: pointer;
+}
+
+
+.hIn .eDate { font-weight: 700; font-size: 18px; }
+.hIn .eTxt { font-size: 14px; }
+
+.hIn .event::before, .hIn .event::after {
+  position: absolute; content: "";
+}
+
+.hIn .event::before {
+  bottom: -30px; left: 50%;
+  content: ""; width: 16px; height: 16px; border-radius: 50%;
+  background: #ffa5a5;
+}
+
+.hIn .event::after {
+  bottom: -20px; left: calc(50% + 6px);
+  width: 1px; height: 20px;
+  border-left: 3px dotted #ffa5a5;
+}
+
+
+
+.personagens {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.personagens h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lista-personagens {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 0;
+}
+
+.lista-personagens li {
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    max-width: 320px;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+.lista-personagens li:hover {
+    transform: scale(1.03);
+}
+
+.lista-personagens h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #1a1a1a;
+}
+
+.pessoas img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.lista-personagens p {
+    font-size: 0.95em;
+    color: #333;
+}
