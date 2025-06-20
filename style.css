@@ -1,260 +1,103 @@
-
-.intr{
-    background-color: #D9D9D9;
-    text-align: justify;
-    padding-left: 10px;
-    padding-right: 10px;
-    
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #1e2a38; /* azul-acinzentado suave */
+    color: #f5f5f5; /* branco gelo */
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 20px;
 }
 
-.historia{
-    background-color: #D9D9D9;
-    text-align: center;
-    
-}
-
-#linhadotempo{
-    background-color: #8C8C8C;
-}
-
-.personagens{
-    background-color: #D9D9D9;
-    text-align: center;
-    margin-top: 20px;
+/* Títulos com fonte serifada */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #f5f5f5;
     margin-bottom: 20px;
 }
 
-.curiosidades {
-    background-image: url(img/independencia-dos-eua.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: darken;
-    text-align: center;
-    padding: 20px 10px;
-    padd
-    max-width: 900px;
-    margin: 0 auto;
+/* Links e destaques */
+a, .navbar ul li a {
+    color: #3b82f6; /* azul claro patriótico */
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.curiosidades h2 {
-    color: #ffffff;
-    font-size: 22px;
-    margin-bottom: 15px;
-    text-shadow: 1px 1px 2px #000;
+a:hover, .navbar ul li a:hover {
+    color: #60a5fa;
 }
 
-.curiosidades ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 700px;
-    font-size: 14px;
-    color: #ffffff;
-    line-height: 1.5;
-    text-shadow: 1px 1px 2px #000;
-}
-
-.curiosidades li {
-    margin-bottom: 10px;
-    background-color: rgba(255, 255, 255, 0.08);
-    padding: 10px;
-    border-radius: 8px;
-    transition: all 0.3s ease; 
-}
-
-/* HOVER */
-.curiosidades li:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-    transform: scale(1.03); 
-    cursor: pointer;
-}
-
-
-.rodape {
-  background-color: #8C8C8C;
-  color: #ffffff;
-  text-align: center;
-  padding: 20px 10px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  border-top: 4px solid #D9D9D9; 
-  margin-top: 40px;
-}
-
-.rodape p {
-  margin: 5px 0;
-}
-
-
-
-
-.textoimagem{
-    background-color: #8C8C8C;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
-
-.imgguerra {
-    height: auto;
-    width: 600px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-   ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    text-align: center;
-   
-    
-}
-
-   li {
-    display: inline-block;
-    margin: 0 10px;
-    padding-bottom: 10px;
-}
-
-img{
+/* ===== Navbar ===== */
+.navbar {
+    background-color: #8b2c2c; /* vermelho escuro */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     width: 100%;
-    height: relative;
-    
+    padding: 10px 0;
 }
 
-h2{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    }
-    
-     body {
-            font-family: 'Roboto', sans-serif;
-            font-size: 16px;
-            line-height: 1.5;
-            margin: 20px;
-            
-        }
-
-.banner-img {
-    width: 100%;
-    height: auto; 
-    max-height:200px; 
-    object-fit: cover; 
-    display: block;
-    margin: 0 auto; 
-}
-
-.tit {
-    position: relative;
-    text-align: center;
-    color: white;
-   
-}
-
-.titulo-texto {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
-    background-color: rgba(0, 0, 0, 0.3); 
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-        
-
-
-.hOut { overflow-x: auto; }
-.hIn {
-  display: flex;
-  padding-bottom: 10px; margin-bottom: 20px;
-  border-bottom: 3px dotted #ffa5a5;
-  min-width: fit-content; width: 100%;
-}
-
-.hIn .event {
-  color: #fff; background: #921f1f;
-  min-width: 200px; max-width: 300px;
-  padding: 10px; margin: 10px; border-radius: 10px;
-  position: relative;
-
-
-  transition: transform 0.3s ease, background 0.3s ease;
-}
-
-/* NOVO - HOVER */
-.hIn .event:hover {
-  transform: scale(1.05); 
-  background: #b53030;   
-  cursor: pointer;
-}
-
-
-.hIn .eDate { font-weight: 700; font-size: 18px; }
-.hIn .eTxt { font-size: 14px; }
-
-.hIn .event::before, .hIn .event::after {
-  position: absolute; content: "";
-}
-
-.hIn .event::before {
-  bottom: -30px; left: 50%;
-  content: ""; width: 16px; height: 16px; border-radius: 50%;
-  background: #ffa5a5;
-}
-
-.hIn .event::after {
-  bottom: -20px; left: calc(50% + 6px);
-  width: 1px; height: 20px;
-  border-left: 3px dotted #ffa5a5;
-}
-
-
-
-.personagens {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-}
-
-.personagens h1 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.lista-personagens {
+.navbar ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
     justify-content: center;
-    padding: 0;
 }
 
-.lista-personagens li {
-    background-color: #f5f5f5;
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #f5f5f5;
+    font-weight: 600;
+    padding: 8px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #b94b4b;
+}
+
+/* ===== Seções ===== */
+.intr, .historia, .personagens, .curiosidades, #linhadotempo {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #2d3748; /* cinza escuro fosco */
     border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    flex: 1 1 300px;
-    max-width: 320px;
-    padding: 15px;
-    box-sizing: border-box;
-    transition: transform 0.3s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-.lista-personagens li:hover {
+/* Títulos das seções */
+.intr h2, .historia h2, .personagens h1, .curiosidades h2 {
+    margin-top: 0;
+}
+
+/* ===== Personagens com grid ===== */
+.personagens ul.lista-personagens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.personagens li {
+    background-color: #1e2a38;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.personagens li:hover {
     transform: scale(1.03);
 }
 
-.lista-personagens h2 {
-    margin-top: 0;
-    font-size: 1.2em;
-    color: #1a1a1a;
+.personagens h2 {
+    color: #f5f5f5;
+    margin-bottom: 10px;
 }
 
 .pessoas img {
@@ -264,7 +107,169 @@ h2{
     margin-bottom: 10px;
 }
 
-.lista-personagens p {
-    font-size: 0.95em;
-    color: #333;
+/* ===== Linha do tempo ===== */
+#linhadotempo {
+    background-color: #8b2c2c;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.hOut { overflow-x: auto; }
+.hIn {
+    display: flex;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 3px dotted #ffa5a5;
+    min-width: fit-content;
+    width: 100%;
+}
+
+.hIn .event {
+    color: #fff;
+    background: #b94b4b;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.hIn .event:hover {
+    transform: scale(1.05);
+    background: #d36464;
+    cursor: pointer;
+}
+
+.hIn .eDate {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.hIn .eTxt {
+    font-size: 14px;
+}
+
+/* ===== Curiosidades como cards ===== */
+.curiosidades ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 700px;
+    font-size: 15px;
+    color: #f5f5f5;
+    line-height: 1.5;
+}
+
+.curiosidades li {
+    margin-bottom: 15px;
+    background-color: #2d3748;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+
+.curiosidades li:hover {
+    background-color: #3c4b62;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+/* ===== Footer ===== */
+.rodape {
+    background-color: #8b2c2c;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    border-top: 4px solid #2d3748;
+    margin-top: 40px;
+}
+
+/* ===== Imagens responsivas ===== */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== Texto justificado para blocos maiores ===== */
+.intr p, .historia p, .motivo p {
+    text-align: justify;
+}
+
+/* ===== Scroll suave para links internos ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== Responsividade para telas menores ===== */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .personagens ul.lista-personagens {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .curiosidades ul {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.4rem;
+    }
+}
+
+.imgguerra {height: auto;width: 600px;display: block;margin-left: auto;margin-right: auto;}
+.textoimagem{
+    text-align: center;
+    font-size: 14px;
+    color: #f5f5f5;
+    margin-top: 10px;
+}
+.tit {
+    position: relative;
+    background-image: url("img/Bandeira.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* garante que o overlay fique dentro do header */
+}
+
+.tit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* escurecimento: 0.5 = 50% opacidade */
+    z-index: 1;
+}
+
+.titulo-texto {
+    position: relative; /* necessário para ficar acima do overlay */
+    color: white;
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    padding: 0 20px;
 }
